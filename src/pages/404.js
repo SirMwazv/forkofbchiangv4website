@@ -8,23 +8,20 @@ import { navDelay } from '@utils';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
 
-const StyledMainContainer = styled.main`
+const StyledNotFoundSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
-`;
-const StyledTitle = styled.h1`
-  color: var(--green);
-  font-family: var(--font-mono);
-  font-size: clamp(100px, 25vw, 200px);
-  line-height: 1;
-`;
-const StyledSubtitle = styled.h2`
-  font-size: clamp(30px, 5vw, 50px);
-  font-weight: 400;
-`;
-const StyledHomeButton = styled(Link)`
-  ${({ theme }) => theme.mixins.bigButton};
-  margin-top: 40px;
+  min-height: 100vh;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  a {
+    ${({ theme }) => theme.mixins.button};
+    margin-top: 40px;
+  }
 `;
 
 const NotFoundPage = ({ location }) => {
@@ -41,11 +38,12 @@ const NotFoundPage = ({ location }) => {
   }, []);
 
   const content = (
-    <StyledMainContainer className="fillHeight">
-      <StyledTitle>404</StyledTitle>
-      <StyledSubtitle>Page Not Found</StyledSubtitle>
-      <StyledHomeButton to="/">Go Home</StyledHomeButton>
-    </StyledMainContainer>
+    <StyledNotFoundSection className="fillHeight">
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>The page you're looking for doesn't exist or has been removed.</p>
+      <Link to="/">Go Home</Link>
+    </StyledNotFoundSection>
   );
 
   return (

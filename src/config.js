@@ -1,26 +1,14 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'mwazvitam@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://github.com/sirmwazv',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://www.linkedin.com/in/mwazvita-mutowo-5a957b150/',
     },
   ],
 
@@ -44,9 +32,9 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
-    navy: '#0a192f',
-    darkNavy: '#020c1b',
+    red: '#ff4d4d', // Bright red instead of green
+    black: '#121212', // Main black instead of navy
+    darkBlack: '#080808', // Darker black instead of darkNavy
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({

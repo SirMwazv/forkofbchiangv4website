@@ -3,25 +3,114 @@ import React from 'react';
 const IconLoader = () => (
   <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <title>Loader Logo</title>
+    <style>
+      {`
+        @keyframes letterChange {
+          0%, 25% { opacity: 1; }
+          26%, 50% { opacity: 0; }
+          51%, 75% { opacity: 1; }
+          76%, 100% { opacity: 0; }
+        }
+        
+        #hexM, #letterM { animation: letterChange 4s infinite; }
+        #hexM2, #letterM2 { animation: letterChange 4s infinite; }
+        #hexJ, #letterJ { animation: letterChange 4s infinite 1s; }
+        #hexMFinal, #letterMFinal { animation: letterChange 4s infinite 2s; }
+      `}
+    </style>
     <g>
-      <g id="B" transform="translate(11.000000, 5.000000)">
+      {/* First hexagon with M */}
+      <g id="hexM">
         <path
-          d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z"
-          fill="currentColor"
+          stroke="var(--green)"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M 50, 5
+                    L 11, 27
+                    L 11, 72
+                    L 50, 95
+                    L 89, 73
+                    L 89, 28 z"
         />
       </g>
-      <path
-        stroke="currentColor"
-        strokeWidth="5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M 50, 5
-                  L 11, 27
-                  L 11, 72
-                  L 50, 95
-                  L 89, 73
-                  L 89, 28 z"
-      />
+
+      <g id="letterM" transform="translate(11.000000, 5.000000)">
+        <path
+          d="M28.541667,61 L33.591667,61 L33.591667,41 L38.591667,50 L43.591667,41 L43.591667,61 L48.691667,61 L48.691667,30.3 L43.591667,30.3 L38.591667,40.3 L33.591667,30.3 L28.541667,30.3 Z"
+          fill="var(--green)"
+        />
+      </g>
+    </g>
+    <g>
+      {/* Second hexagon with M */}
+      <g id="hexM2">
+        <path
+          stroke="var(--green)"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M 50, 5
+                    L 11, 27
+                    L 11, 72
+                    L 50, 95
+                    L 89, 73
+                    L 89, 28 z"
+        />
+      </g>
+
+      <g id="letterM2" transform="translate(11.000000, 5.000000)">
+        <path
+          d="M28.541667,61 L33.591667,61 L33.591667,41 L38.591667,50 L43.591667,41 L43.591667,61 L48.691667,61 L48.691667,30.3 L43.591667,30.3 L38.591667,40.3 L33.591667,30.3 L28.541667,30.3 Z"
+          fill="var(--green)"
+        />
+      </g>
+
+      {/* Third hexagon with J */}
+      <g id="hexJ" style={{ opacity: 0 }}>
+        <path
+          stroke="var(--green)"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M 50, 5
+                    L 11, 27
+                    L 11, 72
+                    L 50, 95
+                    L 89, 73
+                    L 89, 28 z"
+        />
+      </g>
+
+      <g id="letterJ" transform="translate(11.000000, 5.000000)" style={{ opacity: 0 }}>
+        <path
+          d="M41,30.3 L41,50.3 C41,54.3 39,61 33,61 C28,61 26,57 26,54 L31,54 C31,55.5 32,57 33,57 C35.5,57 36,54.5 36,51 L36,30.3 L41,30.3 Z"
+          fill="var(--green)"
+        />
+      </g>
+
+      {/* last hexagon with M */}
+      <g id="hexMFinal" style={{ opacity: 0 }}>
+        <path
+          stroke="var(--green)"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M 50, 5
+                    L 11, 27
+                    L 11, 72
+                    L 50, 95
+                    L 89, 73
+                    L 89, 28 z"
+        />
+      </g>
+
+      <g id="letterMFinal" transform="translate(11.000000, 5.000000)" style={{ opacity: 0 }}>
+        <path
+          d="M28.541667,61 L33.591667,61 L33.591667,41 L38.591667,50 L43.591667,41 L43.591667,61 L48.691667,61 L48.691667,30.3 L43.591667,30.3 L38.591667,40.3 L33.591667,30.3 L28.541667,30.3 Z"
+          fill="var(--green)"
+        />
+      </g>
     </g>
   </svg>
 );
