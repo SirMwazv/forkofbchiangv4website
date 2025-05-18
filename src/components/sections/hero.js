@@ -68,9 +68,13 @@ const Hero = () => {
         I'm a software engineer passionate about crafting clean, performant, and scalable digital
         experiences. With a background in financial services, I specialize in building robust
         backend systems and intuitive frontend interfaces. Currently, I'm focused on creating
-        human-centered, accessible solutions for clients across South Africa and beyond at Singular
-        Systems.
-      </p>
+        human-centered, accessible solutions for clients across South Africa and beyond at&nbsp;{' '}
+        <a href="https://www.singular.co.za/" target="_blank" rel="noreferrer">
+          {' '}
+          Singular Systems{' '}
+        </a>
+        .{' '}
+      </p>{' '}
     </>
   );
   const five = (
