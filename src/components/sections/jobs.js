@@ -39,6 +39,11 @@ const StyledTabList = styled.div`
     padding-left: 50px;
     margin-left: -50px;
     margin-bottom: 30px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   @media (max-width: 480px) {
     width: calc(100% + 50px);
@@ -91,6 +96,7 @@ const StyledTabButton = styled.button`
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
     text-align: center;
+    flex-shrink: 0; /* Prevent tabs from shrinking */
   }
 
   &:hover,
@@ -261,7 +267,8 @@ const Jobs = () => {
                   role="tab"
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
-                  aria-controls={`panel-${i}`}>
+                  aria-controls={`panel-${i}`}
+                >
                   <span>{company}</span>
                 </StyledTabButton>
               );
@@ -283,7 +290,8 @@ const Jobs = () => {
                     tabIndex={activeTabId === i ? '0' : '-1'}
                     aria-labelledby={`tab-${i}`}
                     aria-hidden={activeTabId !== i}
-                    hidden={activeTabId !== i}>
+                    hidden={activeTabId !== i}
+                  >
                     <h3>
                       <span>{title}</span>
                       <span className="company">
