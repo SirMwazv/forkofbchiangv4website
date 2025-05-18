@@ -93,7 +93,7 @@ const Hero = () => {
   );
   const five = (
     <div className="email-link-wrapper">
-      <a className="email-link" href="mailto:contact@mwazvitamutowo.dev">
+      <a className="email-link" href="mailto:mwazvitam@gmail.com">
         Get In Touch
       </a>
     </div>
