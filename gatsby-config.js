@@ -25,7 +25,7 @@ module.exports = {
         background_color: config.colors.darkBlack,
         theme_color: config.colors.black,
         display: 'minimal-ui',
-        icon: 'src/images/mmj_logo_black_red.svg',
+        icon: 'src/images/logo.png', // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
