@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['CSS', 'TypeScript', 'HTML', 'Azure', 'Octo/Jenkins', 'Vue.js'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,22 +136,24 @@ const About = () => {
           <div>
             <p>
               Hi! I'm Mwazvita (Maurice Junior) — a Software Engineer with a passion for building
-              reliable and scalable web applications. My journey in development started in
-              university, but really took off when I began automating workflows and building tools
-              to streamline business operations.
+              reliable and scalable web applications. My journey in development started in high
+              school, and I quickly fell in love with the world of coding. I pursued a degree in
+              Computer Science & Information Systems at Rhodes University, where I honed my skills
+              in software engineering and business consulting.
             </p>
 
             <p>
               Since then, I've had the opportunity to work across a range of industries — from
               financial services at <a href="https://www.singular.co.za/">Singular Systems</a> to
-              exciting freelance projects in the startup and NGO spaces. My focus today is crafting
-              robust backend systems, APIs, and full-stack solutions that solve real-world problems.
+              exciting personal projects in the NGO spaces. My focus today is crafting robust
+              backend systems, APIs, and full-stack solutions that solve real-world problems. As a
+              software engineer, I am driven by a desire to build technologies that improve lives
+              and make a meaningful impact.
             </p>
 
             <p>
-              Outside of work, I enjoy pushing myself through endurance sports like triathlons and
-              Hyrox, and I’m currently building tools that bridge tech with everyday needs — like a
-              choir app that sings your part back to you!
+              Outside of work, I enjoy pushing myself through endurance sports like half-marathons
+              and Hyrox, and I’m currently building tools that bridge tech with everyday needs.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

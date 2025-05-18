@@ -61,18 +61,33 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Mwazvita Mutowo.</h2>;
-  const three = <h3 className="big-heading">Software Engineering | Business Consulting</h3>;
+  const three = <h4 className="big-heading">Software Engineering | Business Consulting</h4>;
   const four = (
     <>
       <p>
-        I'm a software engineer passionate about crafting clean, performant, and scalable digital
-        experiences. With a background in financial services, I specialize in building robust
-        backend systems and intuitive frontend interfaces. Currently, I'm focused on creating
-        human-centered, accessible solutions for clients across South Africa and beyond at{' '}
+        {' '}
+        As a software engineer, I am driven by a desire to build technologies that improve lives and
+        make a meaningful impact. With a foundation in financial services, I specialize in
+        developing scalable backend systems and intuitive frontend interfaces that power real-world
+        solutions. I believe in the importance of clean, maintainable code and creating
+        human-centered experiences that are both accessible and performant.{' '}
+      </p>{' '}
+      <p>
+        {' '}
+        My journey into software engineering was fueled by a deep desire to spend my time building
+        tools that help people. Currently, I’m focused on crafting reliable, impactful digital
+        products for clients across South Africa and beyond as a developer at&nbsp;{' '}
         <a href="https://www.singular.co.za/" target="_blank" rel="noreferrer">
-          Singular Systems
+          {' '}
+          Singular Systems{' '}
         </a>
-        .
+        .{' '}
+      </p>{' '}
+      <p>
+        {' '}
+        With experience across web and mobile platforms, and a growing interest in iOS development,
+        I aim to expand my expertise into areas like intelligent systems and product
+        architecture—continuing to build technologies that serve communities at scale.{' '}
       </p>
     </>
   );
