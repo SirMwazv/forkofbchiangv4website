@@ -1,6 +1,6 @@
 ---
 date: '1'
-title: 'Spotify Profile'
+title: 'Project25Zim'
 cover: './demo.png'
 github: 'https://github.com/Project25zim/project25main'
 external: 'https://project25Zim.org'
